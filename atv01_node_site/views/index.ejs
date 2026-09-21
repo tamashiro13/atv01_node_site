@@ -1,0 +1,32 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+    <div class="container">
+        <div class="jumbotron">
+            <br>
+            <h1 class="display-5"><strong>Bem-vindo(a) ao TimãoDex</strong></h1>
+            <p class="lead">Através desse painel é possível listar as tabelas de jogadores, títulos e ídolos.</p>
+            <hr class="my-4">
+            <p class="currentDate"></p>
+            </p>         
+            <p class="lead">
+              <a class="btn btn-info btn-lg" href="/idolos" role="button">Verificar ídolos</a>
+            </p>
+          </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h1>Para onde deseja ir?</h1>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/jogadores">Jogadores</a></li>
+                    <li><a href="/titulos">Títulos</a></li>
+                    <li><a href="/idolos">Ídolos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+<%- include ('partials/footer.ejs') %>

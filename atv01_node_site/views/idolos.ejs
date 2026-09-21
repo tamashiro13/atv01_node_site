@@ -1,0 +1,36 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Ídolos</h1>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nome:</th>
+                            <th>Apelido:</th>
+                            <th>Nascimento:</th>
+                            <th>Jogos pelo Corinthians:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% idolos.forEach(idolo => { %>
+                        <tr>
+                            <td><img src="<%= idolo.foto %>" alt="<%= idolo.nome %>" width="50px"></td>
+                            <td><%= idolo.nome %></td>
+                            <td><%= idolo.apelido %></td>
+                            <td><%= idolo.nascimento %></td>
+                            <td><%= idolo.jogos %></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<%- include ('partials/footer.ejs') %>
